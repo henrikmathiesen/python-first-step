@@ -1,2 +1,2 @@
 def someFunction(v):
-    print(v + " ok")
+    print(v + " ok from imported file")
