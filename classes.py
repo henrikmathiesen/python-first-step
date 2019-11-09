@@ -25,3 +25,7 @@ p.getInfo()
 # The pythonic way for constants is to not grow a class for constants. 
 # Just have some const.py with PI = 3.14 and you can import it everywhere. 
 # from const import PI
+#
+# "use staticmethod() sparingly! There are very few situations where static-methods are necessary in Python, 
+# and I've seen them used many times where a separate "top-level" function would have been clearer."
+#   - https://stackoverflow.com/questions/735975/static-methods-in-python
