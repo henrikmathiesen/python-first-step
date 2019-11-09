@@ -16,3 +16,12 @@ class Person:
 
 p = Person("Adam", 55)
 p.getInfo()
+
+
+# A note on static members
+# "I have my doubts as to whether emulating the static variable behavior of other languages in Python is ever actually necessary."
+#   - https://stackoverflow.com/questions/68645/are-static-class-variables-possible-in-python
+#
+# The pythonic way for constants is to not grow a class for constants. 
+# Just have some const.py with PI = 3.14 and you can import it everywhere. 
+# from const import PI
