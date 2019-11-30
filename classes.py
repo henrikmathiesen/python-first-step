@@ -1,7 +1,11 @@
 class Person:
+
+    # 1) can have a property here
+    x = "x"
     
     # self is a reference to current instance, must be first parameter to every method in a class
     def __init__(self, name, age):
+        # 2) or can just set values to properties in self, like this
         self.name = name
         self.age = age
 
@@ -11,11 +15,17 @@ class Person:
         name = str(self.name)
         age = str(self.age)
 
-        print(name+ " " + age + " " + self.__privateMember)
+        print(name+ " " + age + " " + self.__privateMember + " " + self.x)
 
 
 p = Person("Adam", 55)
 p.getInfo()
+
+# Mutate state on 2 properties (1, 2)
+p.x = "y"
+p.name = "Bertil"
+p.getInfo()
+
 
 
 # A note on static members
